@@ -8,6 +8,8 @@
 ***
 ### Resources: https://en.wikipedia.org/wiki/WALL-E
 ***
+### Technologies
+HTML and CSS
 #### References
 1. Youtube
 2. Google
