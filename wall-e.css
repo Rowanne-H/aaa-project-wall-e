@@ -1,0 +1,697 @@
+/*
+Eye2 should have margin-top:0px.
+However, dont know why the two eyes are not center, so adjusted eye2.
+*/
+body {
+  font-family: papyrus;
+  font-weight: bold;
+}
+
+#title-container {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+}
+
+.title {
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  color: slategrey;
+  position: absolute;
+}
+
+#container {
+  width: 600px;
+  height: 550px;
+  background: lightblue;
+  display: flex;
+}
+
+#wall-e {
+  width: 210px;
+  height: 258px;
+  margin: 192px 3px 150px 87px;
+  display: block;
+}
+
+#wall-e > .head {
+  width: 194px;
+  height: 126px;
+  margin: auto;
+}
+
+#wall-e > .head > .eyes {
+  width: 194px;
+  height: 108px;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  display: flex;
+  top: -5px;
+}
+
+.eye1,
+.eye2 {
+  width: 80px;
+  height: 100px;
+  display: block;
+  background: silver;
+  border: 7px double grey;
+  box-shadow: 0px 0px 10px 1px slategrey inset;
+}
+
+.eye1 {
+  margin-right: 3px;
+  transform: rotate(72deg);
+  border-radius: 10px 88% 40% 60% / 3px 65% 40% 45%;
+}
+
+.eye2 {
+  margin-left: 3px;
+  margin-top: -1px;
+  transform: rotate(-72deg);
+  border-radius: 88% 10px 60% 40% / 65% 3px 45% 40%;
+}
+
+.dot1-1,
+.dot1-2,
+.dot1-3,
+.dot2-1,
+.dot2-2,
+.dot2-3 {
+  width: 2px;
+  height: 2px;
+  border: 2px solid darkgrey;
+  border-radius: 50%;
+}
+
+.dot1-1 {
+  margin: 2px 72px 7px 2px;
+}
+
+.dot2-1 {
+  margin: 2px 2px 7px 72px;
+}
+
+.dot1-2 {
+  margin: 0px 5px 0px 69px;
+}
+
+.dot2-2 {
+  margin: 0px 69px 0px 5px;
+}
+
+.dot1-3 {
+  margin: 4px 59px 0px 15px;
+}
+
+.dot2-3 {
+  margin: 4px 15px 0px 59px;
+}
+
+.eyeball1,
+.eyeball2 {
+  width: 46px;
+  height: 46px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  border: 5px solid grey;
+}
+
+.eyeball1 {
+  margin: 0px 16px 0px 8px;
+}
+
+.eyeball2 {
+  margin: 0px 8px 0px 16px;
+}
+
+.eyeballreflection1,
+.eyeballreflection3 {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+.eyeballreflection2,
+.eyeballreflection4 {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+}
+
+.eyeballreflection1 {
+  margin: 24px 0px 16px 7px;
+}
+
+.eyeballreflection2 {
+  margin: 26px 20px 6px -1px;
+}
+
+.eyeballreflection3 {
+  margin: 24px 7px 16px -1px;
+}
+
+.eyeballreflection4 {
+  margin: 26px 0px 6px 20px;
+}
+
+.neck {
+  width: 20px;
+  height: 108px;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  top: -80px;
+}
+
+.neck1 {
+  width: 13px;
+  height: 35px;
+  margin: auto;
+  background: dimgrey;
+  border-radius: 4px;
+}
+
+.neck2 {
+  width: 15px;
+  height: 42px;
+  margin: auto;
+  background: darkgrey;
+  position: relative;
+  z-index: -1;
+  top: -7px;
+  border-radius: 4px;
+}
+
+.neck3 {
+  width: 20px;
+  height: 46px;
+  margin: auto;
+  background: dimgrey;
+  position: relative;
+  z-index: -2;
+  top: -25px;
+  border-radius: 2px 2px 2px 2px/ 100% 100% 2px 2px;
+}
+
+#wall-e > .body {
+  width: 122px;
+  height: 99px;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  display: flex;
+}
+
+.wall-e-body {
+  width: 122px;
+  height: 100px;
+  display: block;
+  position: absolute;
+}
+
+.wall-e-body1 {
+  width: 120px;
+  height: 33px;
+  margin: auto;
+  background: darkgrey;
+  display: flex;
+}
+
+.corner1,
+.corner2,
+.corner3,
+.corner4 {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.corner1,
+.corner2 {
+  margin-top: -1px;
+}
+
+.corner1 {
+  margin-left: -1px;
+}
+
+.corner2 {
+  margin-right: -2px;
+}
+
+.corner3,
+.corner4 {
+  margin-top: 1px;
+}
+
+.corner1-1,
+.corner2-1,
+.corner3-2,
+.corner4-2 {
+  width: 18px;
+  height: 9px;
+  background: lightgrey;
+}
+
+.corner1-2,
+.corner2-2,
+.corner3-1,
+.corner4-1 {
+  width: 9px;
+  height: 9px;
+  background: lightgrey;
+}
+
+.corner2-2,
+.corner4-1 {
+  margin-left: 8px;
+}
+
+.panel {
+  margin: 3px 16px 6px 16px;
+  width: 54px;
+  height: 24px;
+  display: flex;
+  background: dimgrey;
+}
+
+.panel1 {
+  width: 33px;
+  height: 24px;
+}
+
+.panel1-1 {
+  width: 34px;
+  height: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin: 0.5px;
+}
+
+.panel1-1 > div {
+  border: 0.5px solid grey;
+  background: lightgrey;
+}
+
+.panel1-2 {
+  width: 9px;
+  height: 12px;
+  margin: 0.5px;
+  background: red;
+}
+
+.panel2 {
+  width: 21px;
+  height: 24px;
+  background: black;
+  display: flex;
+}
+
+.panel2-1 {
+  width: 2px;
+  height: 2px;
+  margin: 3px 2px 19px 2px;
+  background: gold;
+}
+
+.panel2-2 {
+  width: 13px;
+  height: 20px;
+  margin: 2px 1px;
+  background: linear-gradient(
+    gold,
+    gold 5%,
+    black 5%,
+    black 10%,
+    gold 10%,
+    gold 18%,
+    black 18%,
+    black 21%,
+    gold 21%,
+    gold 25%,
+    black 25%,
+    black 30%,
+    gold 30%,
+    gold 36%,
+    black 36%,
+    black 40%,
+    gold 40%,
+    gold 48%,
+    black 48%,
+    black 52%,
+    gold 52%,
+    gold 60%,
+    black 60%,
+    black 65%,
+    gold 65%,
+    gold 75%,
+    black 75%,
+    black 82%,
+    gold 82%,
+    gold
+  );
+}
+
+.wall-e-body2 {
+  width: 120px;
+  height: 49px;
+  margin: auto;
+  background: gold;
+}
+
+.wall-e-body3 {
+  width: 122px;
+  height: 18px;
+  margin: auto;
+  background: gold;
+  display: flex;
+}
+
+.text {
+  width: 100px;
+  height: 21px;
+  margin: -3px -10px 0px 30px;
+  background: gold;
+  font-size: 8px;
+  display: flex;
+}
+
+.logo {
+  width: 13px;
+  height: 13px;
+  background: red;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.wall-e-hand1,
+.wall-e-hand2 {
+  width: 58px;
+  height: 40px;
+  z-index: 3;
+  margin-top: 27px;
+  display: block;
+}
+
+.wall-e-hand1 {
+  margin-left: -10px;
+  transform: rotate(10deg);
+}
+
+.wall-e-hand2 {
+  margin-left: 22px;
+  transform: rotate(-10deg);
+}
+
+.finger1,
+.finger2,
+.finger3,
+.finger4 {
+  width: 60px;
+  height: 20px;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    dimgrey,
+    dimgrey 49%,
+    darkgrey 49%,
+    darkgrey 51%,
+    dimgrey 51%,
+    dimgrey
+  );
+}
+
+.finger1,
+.finger3 {
+  box-shadow: 0px 10px 5px darkgrey;
+  border-radius: 25px 25px 0px 0px / 5px 5px 0px 0px;
+  border: 1px solid darkgrey;
+}
+
+.finger2,
+.finger4 {
+  border-radius: 0px 0px 25px 25px / 0px 0px 5px 5px;
+  border: 1px solid darkgrey;
+}
+
+#wall-e > .feet {
+  width: 174px;
+  height: 54px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  top: -33px;
+  display: flex;
+}
+
+.foot1,
+.foot2 {
+  width: 54px;
+  height: 54px;
+  display: flex;
+}
+
+.foot2 {
+  margin-left: 66px;
+}
+
+.foot1-1,
+.foot2-1 {
+  width: 27px;
+  height: 54px;
+  background: linear-gradient(
+    200deg,
+    dimgrey,
+    dimgrey 44%,
+    lightblue 44%,
+    lightblue 48%,
+    dimgrey 48%,
+    dimgrey 58%,
+    lightblue 58%,
+    lightblue 62%,
+    dimgrey 62%,
+    dimgrey 72%,
+    lightblue 72%,
+    lightblue 76%,
+    dimgrey 76%,
+    dimgrey 86%,
+    lightsteelblue 86%,
+    lightsteelblue 90%,
+    dimgrey 90%,
+    dimgrey
+  );
+  border-radius: 5px 0px 0px 5px / 45px 0px 0px 5px;
+}
+
+.foot1-2,
+.foot2-2 {
+  width: 27px;
+  height: 54px;
+  background: linear-gradient(
+    -200deg,
+    dimgrey,
+    dimgrey 44%,
+    lightblue 44%,
+    lightblue 48%,
+    dimgrey 48%,
+    dimgrey 58%,
+    lightblue 58%,
+    lightblue 62%,
+    dimgrey 62%,
+    dimgrey 72%,
+    lightblue 72%,
+    lightblue 76%,
+    dimgrey 76%,
+    dimgrey 86%,
+    lightsteelblue 86%,
+    lightsteelblue 90%,
+    dimgrey 90%,
+    dimgrey
+  );
+  border-radius: 0px 5px 5px 0px / 0px 45px 5px 0px;
+}
+
+#wall-e > .shadow {
+  width: 210px;
+  height: 24px;
+  background: RGB(174, 188, 209);
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: -45px;
+}
+
+#eve {
+  width: 184px;
+  height: 303px;
+  background: lightblue;
+  margin: 137px 99px 150px 27px;
+  display: block;
+}
+
+#eve > .head {
+  height: 141px;
+  width: 174px;
+  background: ghostwhite;
+  border-radius: 50%/70% 70% 30% 30%;
+  outline: 3px solid lightblue;
+  position: relative;
+  z-index: 2;
+  animation: evehead 3s ease alternate infinite;
+}
+
+@keyframes evehead {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -10px;
+  }
+}
+
+.inside-head {
+  height: 84px;
+  width: 141px;
+  background: black;
+  position: relative;
+  top: 48px;
+  margin: auto;
+  border-radius: 50% / 60% 60% 40% 40%;
+  display: flex;
+}
+
+.inside-head > div {
+  height: 20px;
+  width: 39px;
+  position: relative;
+  top: 7px;
+  border-radius: 50% 50% 5px 5px/100% 100% 2px 2px;
+  background: linear-gradient(
+    cyan,
+    cyan 13%,
+    black 13%,
+    black 18%,
+    cyan 18%,
+    cyan 45%,
+    black 45%,
+    black 50%,
+    cyan 50%,
+    cyan 77%,
+    black 77%,
+    black 82%,
+    cyan 82%,
+    cyan 100%
+  );
+  margin: auto;
+  animation: eveeyes 3s ease alternate infinite;
+}
+
+@keyframes eveeyes {
+  from {
+    height: 1px;
+  }
+  to {
+    height: 20px;
+  }
+}
+
+#eve > .body {
+  height: 134px;
+  width: 174px;
+  display: flex;
+  position: relative;
+  top: -7px;
+  animation: evebody 3s ease alternate infinite;
+}
+
+@keyframes evebody {
+  from {
+    top: -7px;
+  }
+  to {
+    top: -17px;
+  }
+}
+
+.hand1,
+.hand2 {
+  height: 102px;
+  width: 28px;
+  background: white;
+  position: relative;
+}
+
+.hand1 {
+  border-radius: 100% 0%;
+  right: -4px;
+  animation: hand1 3s ease alternate infinite;
+}
+
+.hand2 {
+  border-radius: 0% 100%;
+  left: -4px;
+  animation: hand2 3s ease alternate infinite;
+}
+
+@keyframes hand1 {
+  from {
+    transform: rotate(0deg);
+    right: 0px;
+  }
+  to {
+    transform: rotate(10deg);
+    right: 1px;
+  }
+}
+
+@keyframes hand2 {
+  from {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  to {
+    transform: rotate(-10deg);
+    left: 1px;
+  }
+}
+
+.main-body {
+  height: 134px;
+  width: 126px;
+  z-index: 1;
+  background: white;
+  outline: 3px;
+  border-style: solid;
+  border-color: lightblue;
+  border-radius: 15px 15px 50% 50%/25% 25% 75% 75%;
+}
+
+#eve > .shadow {
+  height: 21px;
+  width: 117px;
+  background: RGB(174, 188, 209);
+  border-radius: 50%;
+  position: relative;
+  top: 17px;
+  margin: auto;
+  animation: eveshadow 3s ease alternate infinite;
+}
+
+@keyframes eveshadow {
+  from {
+    height: 21px;
+    width: 117px;
+  }
+  to {
+    height: 18px;
+    width: 100px;
+  }
+}
