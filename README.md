@@ -1,6 +1,6 @@
 # Wall-e
 ***
-### PAGE: https://github.com/Rowanne-H/aaa-project-wall-e
+### Live Demo: [Meet Wall-e and Eve](https://rowanne-h.github.io/project-wall-e/)
 ***
 ### Click the link above to meet Wall-e and Eve
 ***
